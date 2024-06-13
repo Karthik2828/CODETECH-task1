@@ -1,0 +1,26 @@
+import pandas as pd
+
+# 1. Load Data
+data = pd.read_csv('/Users/tejakarthik/Desktop/internship/Data Processing/tips.csv')
+
+# 2. Explore Data
+print(data.head())
+print(data.info())
+print(data.describe())
+
+# 3. Clean Data
+data.dropna(inplace=True)  # Remove rows with missing values
+data.drop_duplicates(inplace=True)  # Remove duplicate rows
+
+# 4. Transform Data
+data['encoded_categorical'] = pd.factorize(data['categorical_column'])[0]  # Encode categorical variable
+data['scaled_numeric'] = (data['numeric_column'] - data['numeric_column'].mean()) / data['numeric_column'].std()  # Scale numeric feature
+
+# 5. Filter Data
+filtered_data = data[data['filter_condition']]
+
+# 6. Aggregate Data
+aggregated_data = data.groupby('grouping_column').agg({'numeric_column': 'mean'})
+
+# 7. Save Processed Data
+filtered_data.to_csv('processed_data.csv', index=False)
