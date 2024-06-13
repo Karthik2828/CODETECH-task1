@@ -15,7 +15,10 @@ Overview of the Project
 Project: Data Processing
 
 
-Project Output: <img width="406" alt="Screenshot 2024-06-13 at 7 28 10 PM" src="https://github.com/Karthik2828/CODETECH-task1/assets/116016314/216e4ff9-a968-4ce7-9ff4-0213ca1ad9c6">
+Project Output:
+
+
+<img width="406" alt="Screenshot 2024-06-13 at 7 28 10 PM" src="https://github.com/Karthik2828/CODETECH-task1/assets/116016314/216e4ff9-a968-4ce7-9ff4-0213ca1ad9c6">
 
 Objective
 
